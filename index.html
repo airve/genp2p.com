@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>{{ site.title }}</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-</head>
-<body>
-    <ul>
-      {% for post in site.posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
-</body>
-</html> 
+---
+layout: default
+---
+
+        <ul>
+          {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
